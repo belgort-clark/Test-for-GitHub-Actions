@@ -1,9 +1,11 @@
-from tud_test import *
-import assignment
+from assignment.assignment_1.assignment import add
+from assignment.tests.tud_test import *
+
+
 
 def test_add():
     set_keyboard_input(["3","2"])
-    theSum = assignment.add()
+    theSum = add()
     output = get_display_output()
 
     assert output == [
